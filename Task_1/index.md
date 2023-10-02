@@ -1,0 +1,7 @@
+- Username
+- Email address
+- Password
+- Telephone number
+- Date of birth
+- Mailing list signup
+- Star sign

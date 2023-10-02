@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" /> -->
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="styles.css">
+    <title>Class 8 - Form Processing</title>
+  </head>
+  <body>
+      <h1>Class 8 - Form Processing</h1>
+      
+      <!-- Share the CDN with the class & ask them to think what they could use to improve their forms i.e. bootstrap -->
+      
+      <h2>Demo 1</h2>
+      <form action="#">
+ 
+        <label>Text:</label>
+        <input required type='text' name='name' placeholder='some text' >
+        
+        <label>Email:</label>
+        <input type='email' name='email' placeholder='a@a.com'>
+        
+        <label>password:</label>
+        <input type='password' name='password'>
+        
+        <label>DropDown:</label>
+        <select name="options">
+          <option value="1">Super</option>
+          <option value="2">Highly</option>
+          <option value="2">Its not its spam</option>
+        </select>
+        
+        <label>Textarea:</label>
+        <textarea name="question" placeholder="some text"></textarea>
+        
+        <input type="submit">  
+      </form>
+
+      <!-- <h2>Demo 2</h2>
+        <form action="#">
+          <fieldset>
+            <legend>CheckBox</legend>
+            <label>check 1:</label>
+              <input value='1' type='checkbox' name='check1' class='demo2'>
+            <label>check 2:</label>
+              <input value='2' type='checkbox' name='check2' class='demo2'>
+            <label>check 3:</label>
+              <input value='3' type='checkbox' name='check3' class='demo2'>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Radio</legend>
+            <label for="html">HTML</label>
+              <input type="radio" id="html" name="fav_language" value="HTML" class='demo2'>
+            <label for="css">CSS</label>
+              <input type="radio" id="css" name="fav_language" value="CSS" class='demo2'>
+            <label for="javascript">JavaScript</label>
+              <input type="radio" id="javascript" name="fav_language" value="JavaScript" class='demo2'>
+            </fieldset>
+          
+            <input type="submit">
+        </form> -->
+
+      <!-- <h2>Demo 3</h2>
+      <form action="#">
+        <h3>select</h3>
+        <label>DropDown:</label>
+        <select name="options">
+          <option value="1">Super</option>
+          <option value="2">Highly</option>
+          <option value="2">Its not its spam</option>
+        </select>
+
+        <h3>validation</h3>
+        <input type="text" name="example" id="example" required>
+        <input type="submit">
+      </form> -->
+
+      <!-- <h2>Demo 4</h2>
+      <form action="" id="loginForm">
+        <h3>Login</h3>
+        <input type="text" id="username" class="form-control" placeholder="Enter your Username...">
+        <input type="password" id="password" class="form-control" placeholder="Enter your Password...">
+        <button type="submit">Submit</button>
+      </form>
+      <script>
+        let loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          let username = document.getElementById("username").value;
+          let password = document.getElementById("password").value;
+
+          console.log(username, password);
+
+          username.value = "";
+          password.value = "";
+        });
+      </script> -->
+
+      <!-- <h2>Demo 5</h2>
+      <form name="example" netlify>
+        <h3>Login</h3>
+        <label for="foreName">ForeName</label>
+        <input type="text" id="foreName" name="foreName">
+        <label for="surName">SurName</label>
+        <input type="text" id="surName" name="surName">
+        <button type="submit">Submit</button>
+      </form> -->
+  </body>
+</html>

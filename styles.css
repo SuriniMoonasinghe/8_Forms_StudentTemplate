@@ -1,0 +1,12 @@
+input, textarea, select {
+    display: block;
+    margin: 0.5rem 0;
+}
+.demo2 {
+    display: inline;
+    margin-left: 1rem;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+}
