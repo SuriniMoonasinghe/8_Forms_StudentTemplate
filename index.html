@@ -16,24 +16,24 @@
       <h2>Demo 1</h2>
       <form action="#">
  
-        <label>Text:</label>
-        <input required type='text' name='name' placeholder='some text' >
+        <label for="name">Text:</label><br />
+        <input required type='text' id="name" name='name' placeholder='some text' >
         
-        <label>Email:</label>
-        <input type='email' name='email' placeholder='a@a.com'>
+        <label for="email">Email:</label>
+        <input type='email' id="email" name='email' placeholder='a@a.com'>
         
-        <label>password:</label>
-        <input type='password' name='password'>
+        <label for="password">password:</label>
+        <input type='password' id="password" name='password'>
         
-        <label>DropDown:</label>
-        <select name="options">
+        <label for="options">DropDown:</label>
+        <select id="options" name="options">
           <option value="1">Super</option>
           <option value="2">Highly</option>
           <option value="2">Its not its spam</option>
         </select>
         
-        <label>Textarea:</label>
-        <textarea name="question" placeholder="some text"></textarea>
+        <label for="question">Textarea:</label>
+        <textarea id="question" name="question" placeholder="some text"></textarea>
         
         <input type="submit">  
       </form>
@@ -42,11 +42,11 @@
         <form action="#">
           <fieldset>
             <legend>CheckBox</legend>
-            <label>check 1:</label>
+            <label for="check1">check 1:</label>
               <input value='1' type='checkbox' name='check1' class='demo2'>
-            <label>check 2:</label>
+            <label for="check2">check 2:</label>
               <input value='2' type='checkbox' name='check2' class='demo2'>
-            <label>check 3:</label>
+            <label for="check3">check 3:</label>
               <input value='3' type='checkbox' name='check3' class='demo2'>
           </fieldset>
           
@@ -66,19 +66,30 @@
       <!-- <h2>Demo 3</h2>
       <form action="#">
         <h3>select</h3>
-        <label>DropDown:</label>
+        <label for="options">DropDown:</label>
         <select name="options">
           <option value="1">Super</option>
           <option value="2">Highly</option>
-          <option value="2">Its not its spam</option>
+          <option value="3">Low</option>
+        </select>
+      </form> -->
+      
+      <!-- <h2>Demo 4</h2>
+      <form action="#">
+        <h3>select</h3>
+        <label for="options">DropDown:</label>
+        <select name="options">
+          <option value="1">Super</option>
+          <option value="2">Highly</option>
+          <option value="3">Low</option>
         </select>
 
         <h3>validation</h3>
-        <input type="text" name="example" id="example" required>
+        <input type="email" name="example" id="example" required>
         <input type="submit">
       </form> -->
 
-      <!-- <h2>Demo 4</h2>
+      <!-- <h2>Demo 5</h2>
       <form action="" id="loginForm">
         <h3>Login</h3>
         <input type="text" id="username" class="form-control" placeholder="Enter your Username...">
@@ -94,16 +105,17 @@
           let username = document.getElementById("username").value;
           let password = document.getElementById("password").value;
 
-          console.log(username, password);
+          console.log('username:', username, 'password:', password);
 
           username.value = "";
           password.value = "";
         });
       </script> -->
 
-      <!-- <h2>Demo 5</h2>
+      <!-- <h2>Demo 6</h2>
+      <a href="https://youtube.com/shorts/HFMfn_XBdyo?si=L8ita-eeViqmZt3u">Example of how to create form on Netlify</a>
       <form name="example" netlify>
-        <h3>Login</h3>
+        <h3>Details</h3>
         <label for="foreName">ForeName</label>
         <input type="text" id="foreName" name="foreName">
         <label for="surName">SurName</label>
