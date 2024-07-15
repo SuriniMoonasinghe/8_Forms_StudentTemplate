@@ -10,7 +10,79 @@
   <body>    
     <h1>Task 2 - Form</h1>
     <form action="#">
+      <fieldset>
+        <legend> Surini's Form</legend>
+
+        <label for="username">Create your username</label>
+        <input type="text" id="username" name="username" 
+        placeholder="e.g SuMoon97" required maxlength="30" minlength="7">
+        <br><br>
+
+        <label for="emailAddress"> Enter your Email Address</label>
+        <input type="email" id="emailAddress" name="email" 
+        placeholder="e.g surini@email.co.uk" required> 
+        <br><br>
+
+        <label for="password"> Generate a password </label>
+        <input type="password" id="password" name="password" 
+        required minlength="7" maxlength="20">
+        <br><br>
+
+        <label for="telephoneNumber"> Enter your telephone number</label>
+        <input type="tel" id="telephoneNumber" name="phoneNumber" required>
+        <br><br>
+
+        <label for="dob"> Enter your date of birth</label>
+        <input type="date" id="dob" class="dateOfBirth" required>
+        <br><br>
+
+        <fieldset>
+          <legend> Do you want to sign up to our mailing list?</legend>
+          <input type="checkbox" id="yesMailingList" name="isMailingList" checked>
+          <label for="yesMailingList">Yes</label>
+          <br>
+          <input type="checkbox" id="noMailingList" name="isMailingList">
+          <label for="noMailingList">No</label>
+        </fieldset>
       
+      <br><br>
+        <fieldset>
+          <legend>Please choose your star sign</legend>
+          <input type="radio" id="capricorn" name="starSign" value="capricorn">
+          <label for="capricorn">Capricorn </label>
+          <input type="radio" id="aquarius" name="starSign" value="aquarius">
+          <label for="aquarius">Aquarius </label>
+          <input type="radio" id="Pisces" name="starSign" value="pisces">
+          <label for="pisces">Pisces </label>
+          <input type="radio" id="aries " name="starSign" value="aries ">
+          <label for="aries">Aries </label>
+          <input type="radio" id="taurus" name="starSign" value="taurus">
+          <label for="taurus">Taurus </label>
+          <input type="radio" id=gemini"" name="starSign" value="gemini">
+          <label for="gemini">Gemini </label>
+          <input type="radio" id="cancer" name="starSign" value="cancer">
+          <label for="cancer">Cancer </label>
+          <input type="radio" id="leo" name="starSign" value="leo">
+          <label for="leo">Leo</label>
+          <input type="radio" id="virgo" name="starSign" value="virgo">
+          <label for="virgo">Virgo</label>
+          <input type="radio" id="libra" name="starSign" value="libra">
+          <label for="libra">Libra</label>
+          <input type="radio" id="scorpio" name="starSign" value="scorpio">
+          <label for="scorpio">Scorpio</label>
+          <input type="radio" id="sagittarius" name="starSign" value="sagittarius">
+          <label for="sagittarius">Sagittarius</label>
+        </fieldset>
+        <br>
+        
+        <button type="submit">Submit</button>
+
+
+
+      </fieldset>
     </form>
+
+    
+    
   </body>
 </html>

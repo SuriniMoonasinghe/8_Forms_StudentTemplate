@@ -10,7 +10,62 @@
   <body>    
     <h1>Task 3 - Form</h1>
     <form action="#">
+      <fieldset>
+        <legend> Surini's Form</legend>
+
+        <label for="username">Create your username</label>
+        <input type="text" id="username" name="username" 
+        placeholder="e.g SuMoon97" required maxlength="30" minlength="7">
+        <br><br>
+
+        <label for="emailAddress"> Enter your Email Address</label>
+        <input type="email" id="emailAddress" name="email" 
+        placeholder="e.g surini@email.co.uk" required> 
+        <br><br>
+
+        <label for="password"> Generate a password </label>
+        <input type="password" id="password" name="password" 
+        required minlength="7" maxlength="20">
+        <br><br>
+
+        <label for="telephoneNumber"> Enter your telephone number</label>
+        <input type="tel" id="telephoneNumber" name="phoneNumber" required>
+        <br><br>
+
+        <label for="dob"> Enter your date of birth</label>
+        <input type="date" id="dob" class="dateOfBirth" required>
+        <br><br>
+
+        <fieldset>
+          <legend> Do you want to sign up to our mailing list?</legend>
+          <input type="checkbox" id="yesMailingList" name="isMailingList" checked>
+          <label for="yesMailingList">Yes</label>
+          <br>
+          <input type="checkbox" id="noMailingList" name="isMailingList">
+          <label for="noMailingList">No</label>
+        </fieldset>
       
+      <br><br>
+        <fieldset>
+          <label for="starSign">Please select your star sign</label>
+          <select name="starSign" id="starSign" required>
+            <option value="1">Aquarius</option>
+            <option value="2">Pisces</option>
+            <option value="3">Taurus</option>
+            <option value="4">Gemini</option>
+            <option value="5">Cancer</option>
+            <option value="6">Leo</option>
+            <option value="7">Virgo</option>
+            <option value="8">Libra</option>
+            <option value="9">Scorpio</option>
+            <option value="10">Saggitarius</option>
+            <option value="11">Capricorn</option>
+          </select>
+        </fieldset>
+  
+        <br>
+        
+        <button type="submit">Submit</button>
     </form>
   </body>
 </html>
