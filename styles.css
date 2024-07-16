@@ -1,12 +1,65 @@
+#formDiv {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#fieldsetMain{
+    display: flex;
+    flex-direction: column;
+    padding-left:3rem;
+    padding-right: 3rem;
+    width: 90%;
+}
+
+.formRow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.formControl{
+    
+}
+
+.mailingList{
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+    
+}
+.mailinglistdiv{
+    display: inline-block;
+    flex-direction: row;
+    padding-left: 3rem;
+   
+}
+
+#fieldsetTwo{
+    display: flex;
+    justify-content: space-around
+     
+}
+
 input, textarea, select {
     display: block;
     margin: 0.5rem 0;
-}
-.demo2 {
-    display: inline;
-    margin-left: 1rem;
+    width: 100%;
 }
 
-fieldset {
-    margin-bottom: 1rem;
+#dob{
+    width: 70%;
+    justify-content: center;
 }
+
+.dob{
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+

@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" /> -->
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="styles.css">
     <title>Class 8 - Form Processing</title>
@@ -14,29 +13,86 @@
       <!-- Share the CDN with the class & ask them to think what they could use to improve their forms i.e. bootstrap -->
       
       <h2>Demo 1</h2>
-      <form action="#">
- 
-        <label for="name">Text:</label><br />
-        <input required type='text' id="name" name='name' placeholder='some text' >
-        
-        <label for="email">Email:</label>
-        <input type='email' id="email" name='email' placeholder='a@a.com'>
-        
-        <label for="password">password:</label>
-        <input type='password' id="password" name='password'>
-        
-        <label for="options">DropDown:</label>
-        <select id="options" name="options">
-          <option value="1">Super</option>
-          <option value="2">Highly</option>
-          <option value="2">Its not its spam</option>
-        </select>
-        
-        <label for="question">Textarea:</label>
-        <textarea id="question" name="question" placeholder="some text"></textarea>
-        
-        <input type="submit">  
-      </form>
+      
+      <div id="formDiv">  <!-- contains entire form -->
+        <form action="#">
+       
+          <fieldset id="fieldsetMain">
+            <legend> Surini's Form</legend>
+
+            <div class="formRow"> <!-- contains form elements that sit side by side -->
+              
+              <div> <!-- class used to manipulate labels to sit above form element -->
+                <label for="username">Create your username</label>
+                <input type="text" id="username" name="username" 
+                placeholder="e.g SuMoon97" required maxlength="30" minlength="7">
+              </div>       
+
+              <div >
+                <label for="password"> Generate a password </label>
+                <input type="password" id="password" name="password" required minlength="7" maxlength="20">
+              </div>
+
+            </div>
+
+            <div class="formRow">
+              <div class="formControl">
+                <label for="emailAddress"> Enter your Email Address</label>
+                <input type="email" id="emailAddress" name="email" 
+                placeholder="e.g surini@email.co.uk" required> 
+              </div>
+                
+              <div>
+                <label for="telephoneNumber"> Enter your telephone number</label>
+                <input type="tel" id="telephoneNumber" name="phoneNumber" required>
+              <br>
+              </div>
+            </div>  
+            
+            <div class="dob">
+              <label for="dob"> Enter your date of birth</label>
+              <input type="date" id="dob" class="dateOfBirth" required>
+              <br>
+            </div>
+
+            <fieldset id="fieldsetTwo">
+              <legend> Do you want to sign up to our mailing list?</legend>
+              <div class="mailinglistdiv">
+                <input class="mailingList" type="checkbox" id="yesMailingList" name="isMailingList" checked>
+                <label class="mailingList" for="yesMailingList">Yes</label>
+              </div>
+                <br>
+              <div class="mailinglistdiv">           
+                <input class="mailingList" type="checkbox" id="noMailingList" name="isMailingList">
+                <label class="mailingList" for="noMailingList">No</label>
+              </div>         
+              </fieldset>
+          
+            <br>
+              <fieldset>
+                <label for="starSign">Please select your star sign</label>
+                <select name="starSign" id="starSign" required>
+                  <option value="1">Aquarius</option>
+                  <option value="2">Pisces</option>
+                  <option value="3">Taurus</option>
+                  <option value="4">Gemini</option>
+                  <option value="5">Cancer</option>
+                  <option value="6">Leo</option>
+                  <option value="7">Virgo</option>
+                  <option value="8">Libra</option>
+                  <option value="9">Scorpio</option>
+                  <option value="10">Saggitarius</option>
+                  <option value="11">Capricorn</option>
+                </select>
+              </fieldset>
+      
+            <br>
+            
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+
 
       <!-- <h2>Demo 2</h2>
         <form action="#">
